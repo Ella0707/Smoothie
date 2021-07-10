@@ -496,3 +496,106 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+ /* Блок instagram  */
+
+ .instagram_link {
+     font-family: Muli-ExtraBold;
+     font-size: 24px;
+     color: #0aa566;
+     display: flex;
+     justify-content: center;
+     text-decoration: none;
+     margin-bottom: 45px;
+ }
+
+.instagram__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.instagram_photo {
+    /* position: absolute; */
+    /* left: 0px; */
+    /* top: 5936px; */
+    /* width: 384px;
+    height: 384px; */
+    /* z-index: 71;  */
+}
+
+ /* footer  */
+
+ .footer {
+     display: flex;
+     flex-direction: column;
+   
+ }
+
+ .footer__top {
+     background-color: #f5ab3e;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .footer__information {
+    border: 1px solid red;
+     display: flex;
+     flex-direction: column;
+    
+ }
+
+ .information__list {
+    border: 1px solid red;
+     list-style-type: none;
+     padding: 0;
+     font-family: Muli-Bold; 
+     font-size: 18px;
+     font-weight: 700;
+     letter-spacing: 0;
+     line-height: 35px;
+ }
+
+ .information__list-item {
+    color: #6d450c; 
+ }
+
+ .information__link {
+    border: 1px solid red;
+    text-decoration: none;
+ }
+
+ .footer__logo {
+     height: 72px;
+     width: 211px;
+     
+ }
+
+ .title--white {
+     font-family: Muli-ExtraBold;
+     font-size: 26px;
+     color: #ffffff;
+     letter-spacing: -1;
+     line-height: 40px;
+     font-weight: 800;
+     margin-top: 78px;
+     margin-bottom: 50px;
+ }
+
+ .footer__down {
+     /* display: flex;
+     justify-content:space-between */
+     background-color: #692921;
+     color: #ffffff;
+      }
+
+      .footer__small {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .footer__up {
+          display: flex;
+          align-items:flex-end;
+      }
