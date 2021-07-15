@@ -2,6 +2,7 @@
     font-family: Muli-Bold;
     src: url(./assets/fonts/Muli-Bold.ttf);
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
@@ -9,38 +10,76 @@
     src: url(./assets/fonts/Muli-BoldItalic.ttf);
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli-ExtraBold;
     src: url(./assets/fonts/Muli-ExtraBold.woff);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli-Italic;
     src: url(./assets/fonts/Muli-Italic.ttf);
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli-Regular;
     src: url(./assets/fonts/Muli-Regular.woff);
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Muli-Semi;
     src: url(./assets/fonts/Muli-Semi-BoldItalic.ttf);
-    font-variant: semi;
+    font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    border: 1px solid red;
 }
 
 body {
-    font-family: Muli-Regular, sans-serif;
+    font-family: "Muli-Regular", sans-serif;
 
 }
 
+.btn {
+    border-radius: 50px;
+    font-family: "Muli-ExtraBold";
+}
+
+.btn--green {
+    background-color: #09a565;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.title {
+    font-family: "Muli-ExtraBold";
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+/* Блок header  */
+
 .header {
     height: 100vh;
+    max-width: 100%;
     background-image: url(./assets/images/header-bg-img.png);
     background-position: center;
     background-size: cover;
@@ -48,91 +87,67 @@ body {
 }
 
 .header__top {
-    padding-top: 69px;
-    padding-bottom: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin: 50px 100px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* align-items: stretch; */
-}
-
-.header__nav {
-    border: 1px solid red;
 }
 
 .menu__list {
-
-
-    list-style-type: none;
     padding: 0px;
     display: flex;
     column-gap: 35px;
-
 }
-
-.menu__item {}
 
 .menu__link {
     font-family: Muli-Bold;
     font-size: 16px;
     color: #ffffff;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
-.logo {
-    border: 1px solid red;
-
+.header__right-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 135px;
 }
-
-.header__logo {}
-
-.header__personal {}
 
 .personal__list {
-    list-style-type: none;
-    border: 1px solid red;
-    padding: 0px;
     display: flex;
-    column-gap: 45px;
-
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 46px;
+    padding-left: 0px;
 }
 
-.personal__link {
-    text-decoration: none;
+.personal__list-item {
+    display: flex;
+    justify-content: space-between;
 }
+
 
 .personal__counter {
-    text-decoration: none;
     color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #ffffff;
-    height: 19px;
     width: 19px;
+    height: 19px;
     border-radius: 50px;
-    font-family: Muli-Regular;
+    border-color: transparent;
     font-size: 10px;
     line-height: 40px;
 }
 
-
-.header__social {
-    border: 1px solid red;
-}
-
-.social__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-    min-width: 35px;
-    min-width: 35px;
+.social__list-item {
     border-radius: 50%;
+    border-color: transparent;
     background-color: #ffffff;
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social__list {
@@ -142,133 +157,92 @@ body {
     column-gap: 10px;
 }
 
-.btn--green {
-    background-color: #09a565;
-    border-radius: 50px;
-    font-style: Muli-ExtraBold;
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: 800;
-    color: #ffffff;
-    width: 281px;
-    height: 71px;
-    margin-bottom: 764px;
-    /*что-то тут не то явно*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .header__content {
     display: flex;
     justify-content: center;
 }
 
-.header__right-block {
+.content__btn {
+    width: 281px;
+    height: 71px;
     display: flex;
-    justify-content: space-between;
-    column-gap: 120px;
+    justify-content: center;
+    align-items: center;
 }
 
 
-/* Блок Smoothie */
+/* Блок smoothies  */
+
+
 
 .smoothies {
-    background-color: #ffffff;
+    max-width: 100%;
+    /*может это нужно убрать? Проверить после верстки всего блока */
 }
 
 .title--orange {
-    border: 1px solid red;
-    font-family: Muli-ExtraBold;
     color: #f7ae3b;
+    line-height: 40px;
     font-size: 50px;
+}
+
+.smoothies__title {
     text-align: center;
-
-    margin-bottom: 0px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 55px;
+    margin-top: 97px;
 }
 
-.smoothies__wrap {
-    display: flex;
-    justify-content: center;
-    margin-top: 11px;
-}
-
-.smoothies__text {
-    border: 1px solid red;
-    width: 915px;
-    height: 122px;
+.text {
     font-size: 18px;
     line-height: 35px;
     color: #1e1e1e;
+}
+
+.smoothies__text {
+    max-width: 918px;
+    max-height: 156px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    margin-bottom: 88px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .smoothies__wrapper {
-    border: 1px solid red;
-    width: 1000px;
-    height: 399px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
     justify-content: center;
-    gap: 190px 120px;
-
-
-}
-
-.smoothies__span {
-    font-family: Muli-ExtraBold;
-    font-size: 25px;
-    color: #f2612d;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 1010px;
+    height: 410px;
 }
 
 .smoothies__item {
-    border: 1px solid red;
-    list-style-type: none;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 150px;
+    width: 150px;
+    /* max-width: 100%;
+    max-height: 100%; */
 }
 
-.smoothies__img {
-    display: flex;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
+.smoothies__span {
+    text-align: center;
+    color: #f2612d; 
 }
 
 
-/* Блок about  */
+/* Блок About  */
 
 .about {
     background-color: #108173;
+    max-width: 100%;
     display: flex;
     column-gap: 142px;
 }
 
-.about__img {
-    border: 1px solid red;
-    height: 818px;
-    width: 691px;
-}
-
-.about__content {}
-
 .about__title {
-    border: 1px solid red;
-    font-family: Muli-ExtraBold;
-    font-size: 55px;
     color: #ffffff;
     height: 102px;
     width: 588px;
@@ -281,12 +255,10 @@ body {
 }
 
 .about__list {
-    border: 1px solid red;
     list-style-image: url(./assets/images/1.png);
 }
 
 .about__item {
-    font-family: Muli-Regular;
     font-size: 21px;
     color: #ffffff;
 }
@@ -298,31 +270,26 @@ body {
 .btn--transparet {
     background-color: transparent;
     border: 2px solid #f7b131;
-    border-radius: 50px;
-    font-family: Muli-ExtraBold;
     font-size: 21px;
     color: #ffffff;
-    text-decoration: none;
-    padding: 22px 98px 18px 29px;
-
 }
 
 /* Секция Продукт  */
 
 .product {
-    border: 1px solid red;
     display: flex;
     justify-content: stretch;
 
 }
 
 .product__box {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 720px;
     width: 480px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .product__box:first-child {
@@ -358,22 +325,25 @@ body {
 
 .product__btn {
     border: 2px solid white;
+    height: 61px;
+    width: 205px;
+    display: flex;
+    align-items: center;
+    padding-left: 37px;
 }
 
 .product__img {
     padding-top: 129px;
 }
 
-
 /* Блок Story  */
 
 .story {
-    border: 1px solid red;
+    max-width: 100%;
     display: flex;
 }
 
 .story__img {
-    border: 1px solid red;
     display: flex;
     justify-content: stretch;
     margin-left: 310px;
@@ -383,9 +353,7 @@ body {
 }
 
 .story__text {
-    border: 1px solid red;
     margin: 0px;
-    font-family: Muli-Regular;
     font-size: 18px;
     line-height: 35px;
     width: 470px;
@@ -394,7 +362,6 @@ body {
 }
 
 .story__content {
-    border: 1px solid red;
     width: 508px;
     height: 337px;
     display: flex;
@@ -406,10 +373,6 @@ body {
 }
 
 .story__title {
-    border: 1px solid red;
-    font-family: Muli-ExtraBold;
-    font-size: 50px;
-    color: #f7ae3b;
     margin-top: 0px;
     margin-bottom: 43px;
 }
@@ -422,180 +385,3 @@ body {
     justify-content: space-between;
     padding-left: 31px;
 }
-
-
-/* Блок testimonials */
-
-.testimonials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #662c1e;
-    height: 100vh;
-}
-
-.testimonials__title {
-    border: 1px solid red;
-    font-family: Muli-ExtraBold;
-    font-size: 50px;
-    color: #f7ae3b;
-  }
-
-.title--color {
-    color: #f2612d;
-}
-
-.testimonials__block {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    max-width: 734px;
-   }
-
-.testimonials__quote {
-    text-align: center;
-    font-size: 18px;
-
-}
-
-.quote__text {
-    font-family: Muli-Regular;
-    color:#ffffff;
-    line-height: 35px;
-    font-weight: lighter;
-}
-
-.quote__autor {
-    font-family: Muli-Semi;
-    color: #f7ae3b;
-    font-weight: bolder;
-}
-
-
- /* Блок blog */
-
-.blog {
-    border: 1px solid red;
-    background-color: #ffffff;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    column-gap: 61px;
-    align-items:center;
-}
-
-.blog__left-block {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-}
-
-.blog__article {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-}
-
- /* Блок instagram  */
-
- .instagram_link {
-     font-family: Muli-ExtraBold;
-     font-size: 24px;
-     color: #0aa566;
-     display: flex;
-     justify-content: center;
-     text-decoration: none;
-     margin-bottom: 45px;
- }
-
-.instagram__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-}
-
-.instagram_photo {
-    /* position: absolute; */
-    /* left: 0px; */
-    /* top: 5936px; */
-    /* width: 384px;
-    height: 384px; */
-    /* z-index: 71;  */
-}
-
- /* footer  */
-
- .footer {
-     display: flex;
-     flex-direction: column;
-   
- }
-
- .footer__top {
-     background-color: #f5ab3e;
-     display: flex;
-     justify-content: space-between;
- }
-
- .footer__information {
-    border: 1px solid red;
-     display: flex;
-     flex-direction: column;
-    
- }
-
- .information__list {
-    border: 1px solid red;
-     list-style-type: none;
-     padding: 0;
-     font-family: Muli-Bold; 
-     font-size: 18px;
-     font-weight: 700;
-     letter-spacing: 0;
-     line-height: 35px;
- }
-
- .information__list-item {
-    color: #6d450c; 
- }
-
- .information__link {
-    border: 1px solid red;
-    text-decoration: none;
- }
-
- .footer__logo {
-     height: 72px;
-     width: 211px;
-     
- }
-
- .title--white {
-     font-family: Muli-ExtraBold;
-     font-size: 26px;
-     color: #ffffff;
-     letter-spacing: -1;
-     line-height: 40px;
-     font-weight: 800;
-     margin-top: 78px;
-     margin-bottom: 50px;
- }
-
- .footer__down {
-     /* display: flex;
-     justify-content:space-between */
-     background-color: #692921;
-     color: #ffffff;
-      }
-
-      .footer__small {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
-
-      .footer__up {
-          display: flex;
-          align-items:flex-end;
-      }
