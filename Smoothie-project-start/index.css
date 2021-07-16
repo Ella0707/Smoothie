@@ -88,7 +88,6 @@ ul {
 
 .header__top {
     margin: 50px 100px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -209,26 +208,33 @@ ul {
 .smoothies__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     width: 1010px;
-    height: 410px;
+    height: 400px;
+    column-gap: 70px;
 }
 
 .smoothies__item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 150px;
-    width: 150px;
-    /* max-width: 100%;
-    max-height: 100%; */
+    height: 180px;
+    width: 190px;
+    max-width: 100%;
+    max-height: 100%; 
+} 
+
+.smoothies__img {
+    object-fit:cover;
+    margin: auto;
 }
 
 .smoothies__span {
     text-align: center;
+    font-size: 25px;
     color: #f2612d; 
 }
 
@@ -239,15 +245,29 @@ ul {
     background-color: #108173;
     max-width: 100%;
     display: flex;
-    column-gap: 142px;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.about__img { 
+    margin-bottom: -86px;
+    position: relative;
+    margin-left: 143px;
+    margin-right: 179px;
+    margin-top: 56px;
+ 
 }
 
 .about__title {
     color: #ffffff;
-    height: 102px;
-    width: 588px;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 55px;
+    text-align: left;
+    margin-top: 97px;
+    margin-bottom: 68px;
 }
 
 .title--yellow {
@@ -256,11 +276,17 @@ ul {
 
 .about__list {
     list-style-image: url(./assets/images/1.png);
+    margin-bottom: 48px;
 }
 
 .about__item {
     font-size: 21px;
     color: #ffffff;
+    line-height: 22px;
+}
+
+.about__item:not(:last-child) {
+    margin-bottom: 24px;
 }
 
 .item--bold {
@@ -269,9 +295,20 @@ ul {
 
 .btn--transparet {
     background-color: transparent;
-    border: 2px solid #f7b131;
+    border: 2px solid #f7b131; 
+    }
+
+.about__btn {
+    font-family: Muli;
+    font-weight: bold;
     font-size: 21px;
     color: #ffffff;
+    width: 380px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    margin-bottom: 95px;
 }
 
 /* Секция Продукт  */
@@ -309,7 +346,8 @@ ul {
 }
 
 .product__title {
-    font-family: Muli-Bold;
+    font-family: "Muli";
+    font-weight: bold;
     font-size: 24px;
     color: #ffffff;
     margin-bottom: 16px;
@@ -330,6 +368,8 @@ ul {
     display: flex;
     align-items: center;
     padding-left: 37px;
+    color: white;
+    font-size: 21px;
 }
 
 .product__img {
@@ -346,18 +386,18 @@ ul {
 .story__img {
     display: flex;
     justify-content: stretch;
-    margin-left: 310px;
-    margin-top: 120px;
-    margin-bottom: 155px;
-    margin-right: 310px;
+    padding-left: 233px;
+    padding-top: 120px;
+    padding-bottom: 155px;
+    padding-right: 310px;
 }
 
 .story__text {
     margin: 0px;
     font-size: 18px;
     line-height: 35px;
-    width: 470px;
-    height: 130px;
+    width: 515px;
+    height: 118px;
     margin-bottom: 54px;
 }
 
@@ -382,6 +422,83 @@ ul {
     width: 302px;
     margin: 0px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     padding-left: 31px;
+    font-size: 21px;
 }
+
+
+/* Блок testimonials */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #662c1e;
+    height: 718px;
+}
+
+.testimonials__title {
+  margin-top: 117px;
+  margin-bottom: 118px;
+}
+
+.title--color {
+    color: #f2612d;
+}
+
+.testimonials__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 19px;
+    max-width: 734px;
+    padding-bottom: 144px;
+}
+
+.testimonials__quote {
+    text-align: center;
+    font-size: 18px;
+}
+
+.quote__text {
+    font-family: Muli-Regular;
+    color: #ffffff;
+    line-height: 35px;
+    font-weight: lighter;
+    width: 455px;
+    height: 130px;
+}
+
+.quote__autor {
+    font-family: Muli-Semi;
+    color: #f7ae3b;
+    font-weight: bolder;
+}
+
+.testimonials__controls {
+    display: flex;
+    column-gap: 98px;
+}
+
+/* Блок blog */
+
+.blog {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 61px;
+    align-items: center;
+}
+
+.blog__left-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__article {
+    display: flex;
+    flex-direction: column;
+}
+
