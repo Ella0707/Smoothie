@@ -88,7 +88,10 @@ ul {
 }
 
 .header__top {
-    margin: 50px 100px;
+    margin-top: 64px;
+    margin-left: 73px;
+    margin-right: 73px;
+    margin-bottom: 99px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,9 +99,9 @@ ul {
 }
 
 .menu__list {
-    padding: 0px;
+    padding-left: 15px;
     display: flex;
-    column-gap: 33px;
+    column-gap: 31px;
 }
 
 .menu__link {
@@ -109,27 +112,25 @@ ul {
 }
 
 .header__logo {
-    margin-top: 18px;
     position: absolute;
-    top: 50%;
+    /* top: 14px; */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
 }
 
 .header__right-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 135px;
+    column-gap: 132px;
     position: relative;
 }
 
 .personal__list {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    column-gap: 46px;
-    padding-left: 0px;
+    column-gap: 41px;
 }
 
 .personal__list::after {
@@ -138,7 +139,7 @@ ul {
     height: 2px;
     background-color: #ffd68f;
     position: absolute;
-    right: 170px;
+    right: 173px;
 }
 
 .personal__list-item:last-child {
@@ -158,7 +159,7 @@ ul {
     font-size: 10px;
     position: absolute;
     top: -9px;
-    right: -17px;
+    right: -16px;
 }
 
 .social__list-item {
@@ -189,7 +190,7 @@ ul {
     height: 71px;
     font-size: 24px;
     padding-top: 19px;
-    padding-left: 40px;
+    padding-left: 44px;
 }
 
 .content__btn::after {
@@ -200,7 +201,7 @@ ul {
     height: 20px;
     position: absolute;
     top: 29px;
-    right: 49px;
+    right: 29px;
 }
 
 .header__btn {
@@ -214,7 +215,7 @@ ul {
 
 
 .smoothies {
-    max-width: 100%;
+    height: 870px;
     /*может это нужно убрать? Проверить после верстки всего блока */
 }
 
@@ -226,7 +227,7 @@ ul {
 
 .smoothies__title {
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 36px;
     margin-top: 97px;
 }
 
@@ -237,7 +238,10 @@ ul {
 }
 
 .smoothies__text {
-    max-width: 918px;
+    font-family: "Muli";
+    font-style: italic;
+    line-height: 35px;
+    max-width: 922px;
     max-height: 156px;
     text-align: center;
     margin-left: auto;
@@ -253,17 +257,25 @@ ul {
     padding: 0;
     width: 1010px;
     height: 400px;
-    column-gap: 70px;
+    /* column-gap: 70px; */
 }
 
 .smoothies__item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 180px;
-    width: 190px;
+    height: 198px;
+    width: 249px;
     max-width: 100%;
     max-height: 100%;
+    padding-bottom: 27px;
+}
+
+.smoothies__item:nth-child(1),
+.smoothies__item:nth-child(2),
+.smoothies__item:nth-child(3) {
+    border-right: 1px solid red; /* #f6ecdd; */
+    border-bottom: 1px solid red;
 }
 
 .smoothies__img {
@@ -294,11 +306,10 @@ ul {
 
 .about__img {
     margin-bottom: -86px;
-    position: relative;
+    z-index: 1;
     margin-left: 143px;
     margin-right: 179px;
     margin-top: 56px;
-
 }
 
 .about__title {
@@ -307,10 +318,22 @@ ul {
     text-align: left;
     margin-top: 97px;
     margin-bottom: 68px;
+    position: relative;
 }
 
 .title--yellow {
     color: #cae941;
+}
+
+.title--yellow::after {
+    content: "";
+    background-image:url(./assets/images/line_green.png);
+    background-repeat: no-repeat;
+    width: 460px;
+    height: 25px;
+    position: absolute;
+    top: 123px;
+    left: 61px;
 }
 
 .about__list {
@@ -337,6 +360,24 @@ ul {
     border: 2px solid #f7b131;
 }
 
+.about__btn::after {
+    content: "";
+    background-image: url(./assets/images/Arrow.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    top: 24px;
+    right: 36px;
+}
+
+.about__button {
+    width: 390px;
+    height: 70px;
+    position: relative;
+    margin-bottom: 95px;
+}
+
 .about__btn {
     font-family: Muli;
     font-weight: bold;
@@ -347,7 +388,6 @@ ul {
     display: flex;
     align-items: center;
     padding-left: 29px;
-    margin-bottom: 95px;
 }
 
 /* Секция Продукт  */
@@ -420,6 +460,7 @@ ul {
 .story {
     max-width: 100%;
     display: flex;
+    position: relative;
 }
 
 .story__img {
@@ -429,6 +470,27 @@ ul {
     padding-top: 120px;
     padding-bottom: 155px;
     padding-right: 310px;
+}
+
+.story__pic::after {
+    content: "";
+    background-image:url(./assets/images/stamp.png);
+    width: 306px;
+    height: 248px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 46px;
+}
+
+.story__pic::before {
+    content: "";
+    background-image:url(./assets/images/Dots.png);
+    width: 420px;
+    height: 320px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -233px;
+    right: 43px;
 }
 
 .story__text {
@@ -475,6 +537,7 @@ ul {
     align-items: center;
     background-color: #662c1e;
     height: 718px;
+    /* position: relative; */
 }
 
 .testimonials__title {
@@ -498,6 +561,8 @@ ul {
 .testimonials__quote {
     text-align: center;
     font-size: 18px;
+    position: relative;
+    z-index: 3;
 }
 
 .quote__text {
@@ -507,6 +572,27 @@ ul {
     font-weight: lighter;
     width: 455px;
     height: 130px;
+}
+
+.testimonials__img {
+    z-index: 3;
+}
+
+.quote__text::after {
+    content: "Sarah A.";
+    display: block;
+    position: absolute;
+    font-size: 200px;
+    font-family: "Muli-ExtraBold";
+    color: #521905;
+    /* text-align: center; */
+    line-height: 0.2;    
+    width: 858px;
+    height: 148px;  
+    top: -3px;
+    left: -150px;
+    z-index: -1;
+    opacity: 60%;
 }
 
 .quote__autor {
@@ -541,6 +627,7 @@ ul {
     width: 540px;
     height: 300px;
     margin-top: 200px;
+    position: relative;
 }
 
 .article__heading {
@@ -554,15 +641,38 @@ ul {
     font-family: "Muli";
 }
 
+.article__heading::before {
+    content: "";
+    background-color: #f7ad3d;
+    height: 12px;
+    width: 687px;
+    position: absolute;
+    top: -15px;
+    left: -63px;
+}
+
 .article__text {
     width: 476px;
     height: 240px;
     margin-left: 65px;
+    position: relative;
 }
 
 .article__link {
     font-family: "Muli-ExtraBold";
+    font-style: italic;
     color: #1e1e1e;
+}
+
+.article__link::after {
+    content: "";
+    background-image: url(./assets/images/Arrow.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 136px;
 }
 
 /* Блок instagram  */
