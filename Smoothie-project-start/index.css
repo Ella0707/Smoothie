@@ -238,8 +238,6 @@ ul {
 }
 
 .smoothies__text {
-    font-family: "Muli";
-    font-style: italic;
     line-height: 35px;
     max-width: 922px;
     max-height: 156px;
@@ -274,8 +272,18 @@ ul {
 .smoothies__item:nth-child(1),
 .smoothies__item:nth-child(2),
 .smoothies__item:nth-child(3) {
-    border-right: 1px solid red; /* #f6ecdd; */
-    border-bottom: 1px solid red;
+    border-right: 2px solid #f6ecdd;
+    border-bottom: 2px solid #f6ecdd;
+}
+
+.smoothies__item:nth-child(4) {
+    border-bottom: 2px solid #f6ecdd;
+}
+
+.smoothies__item:nth-child(5),
+.smoothies__item:nth-child(6),
+.smoothies__item:nth-child(7) {
+    border-right: 2px solid #f6ecdd;
 }
 
 .smoothies__img {
@@ -673,6 +681,7 @@ ul {
     position: absolute;
     bottom: 10px;
     right: 136px;
+    object-fit: contain;
 }
 
 /* Блок instagram  */
@@ -687,6 +696,16 @@ ul {
     margin-bottom: 45px;
 }
 
+.instagram_link::before {
+    content: "";
+    background-image: url(./assets/images/Icon.png);
+    width: 27px;
+    height: 27px;
+    background-repeat: no-repeat;
+    margin-right: 11px;
+    object-fit: contain;
+}
+
 .instagram__content {
     max-width: 100%;
     display: flex;
@@ -694,9 +713,11 @@ ul {
     align-items: stretch;
 }
 
-.instagram_photo {
+.instagram__photo {
     max-width: 20%;
 }
+
+.in
 
 /* footer  */
 
