@@ -795,6 +795,7 @@ ul {
 
 .footer__subscribe {
     margin-right: 100px;
+    position: relative;
 }
 
 /* .subscribe__title {
@@ -859,4 +860,16 @@ ul {
 .footer__up {
     padding-right: 163px;
     font-size: 16px;
+}
+
+
+.subscribe__form::before {
+    content: "";
+    background-image: url(./assets/images/arrow3.png);
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 250px;
+    left: 122px;
 }
