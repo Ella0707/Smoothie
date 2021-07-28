@@ -114,8 +114,7 @@ ul {
 
 .header__logo {
     position: absolute;
-    /*top: 14px;
-    */left: 50%;
+    left: 50%;
     transform: translateX(-50%)   ;
 }
 
@@ -129,7 +128,6 @@ ul {
 
 .personal__list {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     column-gap: 41px;
 }
@@ -203,6 +201,7 @@ ul {
     content: "";
     background-image: url(./assets/images/Arrow.png);
     background-repeat: no-repeat;
+    object-fit: cover;
     width: 33px;
     height: 20px;
     position: absolute;
@@ -215,17 +214,15 @@ ul {
     position: relative;
     }
 
-    .menu__item:hover,
-    .personal__list-item:hover,
-    .social__list-item:hover {
-        transition: 1s;
-        transform: scale(1.5);
+.menu__item:hover,
+.personal__list-item:hover,
+.social__list-item:hover {
+    transition: 1s;
+    transform: scale(1.5);
 }
 
 
 /* Блок smoothies  */
-
-
 
 .smoothies {
     height: 870px;
@@ -269,13 +266,12 @@ ul {
     padding: 0;
     width: 1010px;
     height: 400px;
-    /* column-gap: 70px; */
+    max-width: 100%;
 }
 
 .smoothies__item {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     height: 198px;
     width: 249px;
     max-width: 100%;
@@ -332,6 +328,8 @@ ul {
     z-index: 1;
     max-width: 691px;
     max-height: 818px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     background-size: cover;
     margin-left: 143px;
@@ -480,6 +478,16 @@ ul {
     font-size: 21px;
 }
 
+.product__btn::after {
+    content: "";
+    background-image: url(./assets/images/Arrow_white.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    transform: translate(100px, 0px);
+}
+
 .product__img {
     padding-top: 129px;
     object-fit: cover;
@@ -499,6 +507,7 @@ ul {
     justify-content: stretch;
     max-height: 601px;
     max-width: 585px;
+    width: 100%;
     object-fit: cover;
     background-size: cover;
 }
@@ -564,6 +573,16 @@ ul {
     font-size: 21px;
 }
 
+.story__btn::after {
+    content: "";
+    background-image: url(./assets/images/Arrow.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    transform: translate(197px, 0px);
+}
+
 
 /* Блок testimonials */
 
@@ -573,7 +592,6 @@ ul {
     align-items: center;
     background-color: #662c1e;
     height: 718px;
-    /* position: relative; */
 }
 
 .testimonials__title {
@@ -627,7 +645,6 @@ ul {
     font-size: 200px;
     font-family: "Muli-ExtraBold";
     color: #521905;
-    /* text-align: center; */
     line-height: 0.2;    
     width: 858px;
     height: 148px;  
@@ -651,16 +668,22 @@ ul {
 /* Блок blog */
 
 .blog {
-    height: 880px;
+    height: 800px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    column-gap: 61px;
+    /* align-items: center;
+    column-gap: 61px; */
 }
 
 .blog__left-block {
     display: flex;
     flex-direction: column;
+    padding-top: 65px;
+    margin-right: 85px;
+}
+
+.left-block__title {
+    margin-bottom: 55px;
 }
 
 .blog__article {
@@ -668,36 +691,47 @@ ul {
     flex-direction: column;
     width: 540px;
     height: 300px;
-    margin-top: 200px;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 301px;
     position: relative;
 }
 
 .article__heading {
-    width: 540px;
-    height: 199px;
+    max-width: 540px;
+    max-height: 199px;
     font-size: 30px;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     line-height: 40px;
     color: #f2612d;
     font-weight: 800;
     font-family: "Muli";
+    margin-bottom: 8px;
+    margin-left: -25px;
 }
 
 .article__heading::before {
     content: "";
     background-color: #f7ad3d;
     height: 12px;
-    width: 687px;
+    width: 645px;
+    border-radius: 50px;
     position: absolute;
-    top: -15px;
-    left: -63px;
+    top: -28px;
+    left: -92px;
+    z-index: -1;
+}
+
+.article__datatime {
+    margin-left: -29px;
 }
 
 .article__text {
-    width: 476px;
-    height: 240px;
-    margin-left: 65px;
+    max-width: 482px;
+    max-height: 240px;
     position: relative;
+    margin-top: 34px;
+    margin-left: 35px;
 }
 
 .article__link {
@@ -718,6 +752,14 @@ ul {
     object-fit: contain;
 }
 
+.left-block__img {
+    max-width: 555px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    background-size:cover;
+}
+
 /* Блок instagram  */
 
 .instagram_link {
@@ -728,6 +770,8 @@ ul {
     justify-content: center;
     text-decoration: none;
     margin-bottom: 45px;
+    margin-left: 21px;
+    letter-spacing: -0.5px;
 }
 
 .instagram_link::before {
@@ -738,6 +782,7 @@ ul {
     background-repeat: no-repeat;
     margin-right: 11px;
     object-fit: contain;
+    transform: translateX(-5px);
 }
 
 .instagram__content {
@@ -765,36 +810,47 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 380px;
 }
 
-/* .footer__information {
-    display: flex;
-    flex-direction: column;
-} */
+.footer__information {
+    /* transform: translate(171px, -12px); */
+    max-height: 196px;
+    max-width: 243px;
+    width: 100%;
+    transform: translate(144px, 2px);
+} 
 
 .information__list {
-    padding: 0;
+    /* padding: 0; */
     font-family: Muli-Bold;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0;
     line-height: 35px;
-    margin-bottom: 110px;
+    padding-left: 13px;
+    /* margin-block-start: 11px; */
+    /* margin-bottom: 110px; */
 }
 
 .footer__logo {
-    padding-left: 100px;
+    transform: translate(100px, -15px);
 }
 
 .payment__list {
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
 }
 
 .payment__title,
 .information__title,
 .subscribe__title {
-    margin-top: 78px;
-    margin-bottom: 50px;
+    /* margin-top: 143px; */
+}
+
+.information__title {
+    margin: 0px;
+    padding-left: 16px;
+    /* margin-bottom: 12px; */
 }
 
 .title--white {
@@ -804,6 +860,7 @@ ul {
     letter-spacing: -1;
     line-height: 40px;
     font-weight: 800;
+    /* margin-block: 0px; */
 }
 
 
@@ -816,25 +873,48 @@ ul {
     font-family: "Muli";
 }
 
+.footer__payment {
+    max-width: 254px;
+    max-height: 214px;
+    width: 100%;
+
+    /* transform: translate(84px, 52px); */
+}
+
+.payment__title {
+    margin: 0px;
+    padding-left: 0px;
+    padding-top: 15px;
+}
 
 .payment__list {
     display: flex;
     flex-wrap: wrap;
-    height: 190px;
-    width: 254px;
+    max-height: 190px;
+    max-width: 254px;
+    width: 100%;
     padding: 0;
     column-gap: 17px;
+    row-gap: 19px;
+    /* margin-block-start: 31px; */
+}
+
+.footer__information,
+.footer__payment,
+.footer__subscribe {
+    margin-block-start: -40px;
 }
 
 
 .footer__subscribe {
-    margin-right: 100px;
+    /* margin-right: 100px; */
     position: relative;
+    transform: translate(-76px, 32px);
 }
 
-/* .subscribe__title {
-    margin-top: 0;
-} */
+.subscribe__title {
+    margin: 0;
+}
 
 .subscribe__form {
     display: flex;
@@ -876,15 +956,16 @@ ul {
 }
 
 .footer__social {
-    padding-left: 300px;
+    /* padding-left: 300px;
     margin-top: -55px;
-    margin-bottom: 130px;
+    margin-bottom: 130px; */
 }
 
 .footer__down {
     display: flex;
     background-color: #692921;
     color: #ffffff;
+    height: 50px;
 }
 
 .footer__small {
