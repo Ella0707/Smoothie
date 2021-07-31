@@ -418,10 +418,17 @@ ul {
 
 /* Секция Продукт  */
 
-.product {
+
+
+/* .product {
     display: flex;
     justify-content: stretch;
 
+} */
+
+.product__wrap {
+    display: flex;
+    overflow-x: scroll;
 }
 
 .product__box {
@@ -455,7 +462,7 @@ ul {
     font-weight: bold;
     font-size: 24px;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     margin-top: 32px;
 }
 
@@ -534,8 +541,8 @@ ul {
     height: 320px;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: -248px;
-    right: 27px;
+    bottom: -245px;
+    right: 47px;
 }
 
 .story__text {
@@ -587,16 +594,15 @@ ul {
 /* Блок testimonials */
 
 .testimonials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #662c1e;
     height: 718px;
 }
 
 .testimonials__title {
-    margin-top: 121px;
-    margin-bottom: 134px;
+    margin: 0px;
+    padding-top: 120px;
+    padding-bottom: 139px;
+    text-align: center;
 }
 
 .title--color {
@@ -606,8 +612,8 @@ ul {
 .testimonials__block {
     display: flex;
     align-items: center;
+    justify-content: center;
     column-gap: 6px;
-    max-width: 734px;
     padding-bottom: 110px;
 }
 
@@ -621,12 +627,8 @@ ul {
 .quote__text {
     font-family: Muli-Regular;
     color: #ffffff;
-    line-height: 35px;
-    font-weight: lighter;
     max-width: 469px;
-    max-height: 130px;
     margin-left: 0px;
-    margin-right: 32px;
     margin-bottom: 13px;
     margin-top: 0px;
 }
@@ -636,6 +638,7 @@ ul {
     max-width: 220px;
     object-fit: cover;
     z-index: 3;
+    transform: translate(3px, -14px);
 }
 
 .quote__text::after {
@@ -658,11 +661,12 @@ ul {
     font-family: Muli-Semi;
     color: #f7ae3b;
     font-weight: bolder;
+    padding-right: 47px;
 }
 
 .testimonials__controls {
-    display: flex;
-    column-gap: 98px;
+    text-align: center;
+    letter-spacing: 90px;
 }
 
 /* Блок blog */
@@ -913,7 +917,7 @@ ul {
 }
 
 .subscribe__title {
-    margin: 0;
+    margin-top: 0px;
 }
 
 .subscribe__form {
@@ -962,7 +966,6 @@ ul {
 }
 
 .footer__down {
-    display: flex;
     background-color: #692921;
     color: #ffffff;
     height: 50px;
@@ -970,6 +973,8 @@ ul {
 
 .footer__small {
     margin: auto;
+    font-size: 13px;
+    color: #af8a82;
 }
 
 .footer__up {
@@ -987,4 +992,25 @@ ul {
     position: absolute;
     top: 250px;
     left: 122px;
+}
+
+.up__btn {
+    width: 50px;
+    height: 50px;
+    background-color: #f2662f;
+    border-radius: 5px;
+    background-image: url(./assets/images/up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    bottom: 37px;
+    right: 83px;
+}
+
+.up__btn::before {
+    content: "Go top";
+    position: absolute;
+    top: 47px;
+    left: -65px;
+    color: #ffffff;
 }
