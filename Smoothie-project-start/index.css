@@ -42,7 +42,10 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    padding: 0;
+    margin: 0;
+
     border: 1px solid transparent;
 }
 
@@ -89,10 +92,8 @@ ul {
 }
 
 .header__top {
-    margin-top: 64px;
-    margin-left: 73px;
-    margin-right: 90px;
-    margin-bottom: 99px;
+    padding-top: 64px;
+    margin: 0 90px 100px 75px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,6 +126,10 @@ ul {
     column-gap: 132px;
     position: relative;
 }
+.header__title {
+    line-height: 40px;
+    font-size: 50px;
+}
 
 .personal__list {
     display: flex;
@@ -136,9 +141,12 @@ ul {
     content: "";
     width: 47px;
     height: 2px;
+
     background-color: #ffd68f;
+
     position: absolute;
     right: 173px;
+    top: 0;
 }
 
 .personal__list-item:last-child {
@@ -146,34 +154,43 @@ ul {
 }
 
 .personal__counter {
-    color: #000000;
+   
     background-color: #ffffff;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 18px;
     height: 18px;
+
     border-radius: 50%;
     border-color: transparent;
+
     font-size: 10px;
+    color: #000000;
+
     position: absolute;
     top: -9px;
     right: -16px;
 }
 
 .social__list-item {
-    border-radius: 50%;
-    border-color: transparent;
-    background-color: #ffffff;
-    height: 36px;
-    width: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border-radius: 50%;
+    /* border-color: transparent; */
+    background-color: #ffffff;
+
+    height: 36px;
+    width: 36px;
+    
 }
 
 .social__list {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding: 0px;
     display: flex;
     column-gap: 10px;
@@ -186,9 +203,12 @@ ul {
 
 .content__btn {
     width: 281px;
-    height: 71px;
+    height: 70px;
     font-size: 24px;
-    padding-top: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 19px; */
     padding-left: 36px;
 }
 
@@ -224,15 +244,13 @@ ul {
 
 /* Блок smoothies  */
 
-.smoothies {
+/* .smoothies {
     height: 870px;
-    /*может это нужно убрать? Проверить после верстки всего блока */
-}
+} */
 
 .title--orange {
     color: #f7ae3b;
-    line-height: 40px;
-    font-size: 50px;
+   
 }
 
 .smoothies__title {
@@ -249,7 +267,7 @@ ul {
 
 .smoothies__text {
     max-width: 922px;
-    max-height: 156px;
+    /* max-height: 156px; */
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -418,14 +436,6 @@ ul {
 
 /* Секция Продукт  */
 
-
-
-/* .product {
-    display: flex;
-    justify-content: stretch;
-
-} */
-
 .product__wrap {
     display: flex;
     overflow-x: scroll;
@@ -435,7 +445,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 720px; /*или нужно здесь мин высота, мин ширина? */
+    height: 720px; 
     width: 480px;
     max-width: 100%;
     max-height: 100%;
@@ -685,7 +695,6 @@ ul {
     display: flex;
     flex-direction: column;
     padding-top: 60px;
-    /* margin-right: 106px; */
 }
 
 .left-block__title {
@@ -796,13 +805,34 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    position: relative;
 }
 
-.instagram__photo {
+.instagram__wrap {
     max-width: 20%;
 }
 
-.in
+.instagram__wrap::before {
+    content: "";
+    background-image: url(./assets/images/Instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 2;
+    bottom: 26px;
+    transform: translate(329px);
+
+}
+
+
+
+.instagram__photo {
+    position: relative;
+    z-index: -1;
+}
+
 
 /* footer  */
 
