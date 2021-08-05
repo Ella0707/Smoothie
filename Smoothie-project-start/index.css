@@ -508,66 +508,53 @@ ul {
 .story__wrap {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    padding: 100px 0px 160px 0px;
 }
 
 .story__img {
-    display: flex;
-    justify-content: stretch;
-    max-height: 601px;
     max-width: 585px;
     width: 100%;
     object-fit: cover;
-    background-size: cover;
+   
 }
 
 .story__pic {
-    padding-top: 125px;
+    position: relative;
 }
 
-.story__title::after {
+.story__pic::before {
     content: "";
     background-image: url(./assets/images/stamp.png);
     width: 306px;
     height: 248px;
     background-repeat: no-repeat;
     position: absolute;
-    top: -116px;
-    right: -350px;
+    top: 25px;
+    left: -165px;
 }
 
-.story__pic::before {
-    content: "";
-    background-image: url(./assets/images/Dots.png);
-    width: 420px;
-    height: 320px;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: -245px;
-    right: 47px;
+
+.story__title {
+    margin-bottom: 30px;
+    font-size: 50px;
 }
 
 .story__text {
-    margin: 0px;
-    font-size: 18px;
-    line-height: 35px;
     width: 515px;
     height: 118px;
-    margin-bottom: 69px;
+    margin-bottom: 70px;
 }
 
 .story__content {
-    padding-right: 20px;
+    padding-right: 200px;
 }
 
-.story__title {
-    margin-top: 0px;
-    margin-bottom: 43px;
-}
 
 .story__btn {
     height: 61px;
     width: 302px;
-    margin: 0px;
     display: flex;
     align-items: center;
     padding-left: 31px;
@@ -597,6 +584,17 @@ ul {
     padding-top: 120px;
     padding-bottom: 139px;
     text-align: center;
+}
+
+.testimonials__title:before {
+    content: "";
+    background-image: url(./assets/images/Dots.png);
+    width: 420px;
+    height: 320px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -245px;
+    right: 47px;
 }
 
 .title--color {
