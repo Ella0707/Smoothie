@@ -576,14 +576,14 @@ ul {
 
 .testimonials {
     background-color: #662c1e;
-    height: 718px;
+    padding-top: 100px;
 }
 
 .testimonials__title {
-    margin: 0px;
-    padding-top: 120px;
-    padding-bottom: 139px;
+    padding-bottom: 140px;
     text-align: center;
+    font-size: 50px;
+    position: relative;
 }
 
 .testimonials__title:before {
@@ -593,8 +593,8 @@ ul {
     height: 320px;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: -245px;
-    right: 47px;
+    top: -185px;
+    right: 45px;
 }
 
 .title--color {
@@ -605,8 +605,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 6px;
-    padding-bottom: 106px;
+    padding-bottom: 100px;
 }
 
 .testimonials__quote {
@@ -614,36 +613,32 @@ ul {
     font-size: 18px;
     position: relative;
     z-index: 3;
+    padding-right: 45px;
 }
 
 .quote__text {
-    font-family: Muli-Regular;
-    color: #ffffff;
-    max-width: 469px;
-    margin-left: 0px;
-    margin-bottom: 13px;
-    margin-top: 0px;
+      color: #ffffff;
+      max-width: 465px;
+      padding-bottom: 13px;
 }
 
 .testimonials__img {
-    max-height: 218px;
-    max-width: 220px;
+    width: 220px;
     object-fit: cover;
     z-index: 3;
-    transform: translate(3px, -14px);
+    transform: translate(3px, -15px);
 }
 
 .quote__text::after {
     content: "Sarah A.";
-    display: block;
     position: absolute;
     font-size: 200px;
     font-family: "Muli-ExtraBold";
     color: #521905;
     width: 880px;
-    height: 148px;
-    top: -38px;
-    left: -190px;
+    letter-spacing: -2px;
+    top: -40px;
+    left: -200px;
     z-index: -1;
     opacity: 60%;
 }
@@ -651,84 +646,75 @@ ul {
 .quote__autor {
     font-family: Muli-Semi;
     color: #f7ae3b;
-    font-weight: bolder;
-    padding-right: 47px;
 }
 
 .testimonials__controls {
     text-align: center;
     letter-spacing: 90px;
+    padding-bottom: 80px;
 }
 
 /* Блок blog */
 
 .blog {
-    height: 800px;
+    padding-top: 80px;
 }
 
 .blog__wrapper {
     display: flex;
     justify-content: center;
-    column-gap: 110px;
+    align-items: center;
+    column-gap: 90px;
+    padding-bottom: 195px;
 
 }
 
 .blog__left-block {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
 }
 
 .left-block__title {
-    margin-bottom: 55px;
+    padding-bottom: 50px;
+    font-size: 50px;
 }
 
 .blog__article {
     display: flex;
     flex-direction: column;
-    width: 540px;
-    height: 300px;
-    max-height: 100%;
-    max-width: 100%;
-    margin-top: 301px;
-    position: relative;
+    width: 555px;
+    transform: translate(20px, 75px);
 }
 
 .article__heading {
-    max-width: 540px;
-    max-height: 199px;
     font-size: 30px;
     letter-spacing: -0.5px;
-    line-height: 40px;
     color: #f2612d;
-    font-weight: 800;
     font-family: "Muli";
-    margin-bottom: 8px;
-    margin-left: -44px;
+    margin: 10px 0px 10px 0px;
+    position: relative;
 }
 
 .article__heading::before {
     content: "";
     background-color: #f7ad3d;
     height: 12px;
-    width: 645px;
+    width: 660px;
     border-radius: 50px;
     position: absolute;
-    top: -31px;
-    left: -114px;
+    top: -55px;
+    left: -80px;
     z-index: -1;
 }
 
-.article__datatime {
-    margin-left: -48px;
+.article__wrap {
+    transform:translate(-50px);
 }
 
 .article__text {
-    max-width: 482px;
-    max-height: 240px;
+    width: 482px;
     position: relative;
-    margin-top: 30px;
-    margin-left: 15px;
+    transform: translate(10px, 35px);
 }
 
 .article__link {
@@ -750,11 +736,8 @@ ul {
 }
 
 .left-block__img {
-    max-width: 555px;
-    width: 100%;
-    max-height: 400px;
+    width: 555px;
     object-fit: cover;
-    background-size: cover;
 }
 
 /* Блок instagram  */
@@ -765,9 +748,8 @@ ul {
     color: #0aa566;
     display: flex;
     justify-content: center;
-    text-decoration: none;
-    margin-bottom: 45px;
-    margin-left: 2px;
+    padding-bottom: 40px;
+    margin-left: 5px;
     letter-spacing: -0.5px;
 }
 
@@ -783,15 +765,13 @@ ul {
 }
 
 .instagram__content {
-    max-width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
     position: relative;
+    object-fit: cover;
 }
 
 .instagram__wrap {
-    max-width: 20%;
+    width: 384px;
 }
 
 .instagram__wrap::before {
@@ -803,9 +783,8 @@ ul {
     height: 30px;
     position: absolute;
     z-index: 2;
-    bottom: 26px;
-    transform: translate(329px);
-
+    bottom: 20px;
+    transform: translate(330px);
 }
 
 
