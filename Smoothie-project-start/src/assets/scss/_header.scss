@@ -1,0 +1,73 @@
+/* Блок header  */
+
+.header {
+    height: 100vh;
+    max-width: 100%;
+
+    padding-top: 88px;
+
+    background-image: url(./../images/header-bg-img.png);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.header__top {
+    margin: 0 100px 120px 90px;
+
+    position: relative;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__burger-btn {
+    background-color: transparent;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    border: none;
+    width: 50px;
+    display: none;
+    z-index: 2;
+}
+
+.header__burger-btn-icon {
+    width: 100%;
+}
+
+.header__logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.header__right-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__personal {
+    margin: 0px 135px 0px 0px;
+}
+
+.header__title {
+    line-height: 40px;
+    font-size: 50px;
+}
+
+
+.header__content {
+    display: flex;
+    justify-content: center;
+}
+
+.header__btn {
+    display: flex;
+    position: relative;
+}

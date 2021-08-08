@@ -1,0 +1,47 @@
+.personal__list {
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+}
+
+.personal__list::after {
+    content: "";
+    width: 47px;
+    height: 2px;
+
+    background-color: #ffd68f;
+
+    position: absolute;
+    right: 170px;
+    top: 20px;
+}
+
+.personal__list-item:last-child {
+    position: relative;
+}
+
+.personal__counter {
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+    border-color: transparent;
+
+    font-size: 10px;
+    color: #000000;
+
+    position: absolute;
+    top: -9px;
+    right: -16px;
+}
+
+.personal__list-item:hover {
+    transition: 1s;
+    transform: scale(1.5);
+}

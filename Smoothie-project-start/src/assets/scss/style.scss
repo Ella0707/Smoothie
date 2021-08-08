@@ -78,194 +78,12 @@ ul {
 
 /* Блок header  */
 
-.header {
-    height: 100vh;
-    max-width: 100%;
-
-    padding-top: 88px;
-
-    background-image: url(./assets/images/header-bg-img.png);
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-}
-
-.header__top {
-    margin: 0 100px 120px 90px;
-
-    position: relative;
-}
-
-.header__navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__burger-btn {
-    background-color: transparent;
-    position: fixed;
-    right: 40px;
-    top: 20px;
-    border: none;
-    width: 50px;
-    display: none;
-    z-index: 2;
-}
-
-.header__burger-btn-icon {
-    width: 100%;
-}
-
-.menu__list {
-    display: flex;
-    column-gap: 31px;
-
-    padding-left: 15px;
-}
-
-.menu__link {
-    font-family: Muli-Bold;
-    font-size: 16px;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.header__logo {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -70%);
-}
-
-.header__right-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.header__personal {
-    margin: 0px 135px 0px 0px;
-}
-
-.header__title {
-    line-height: 40px;
-    font-size: 50px;
-}
-
-.personal__list {
-    display: flex;
-    align-items: center;
-    column-gap: 45px;
-}
-
-.personal__list::after {
-    content: "";
-    width: 47px;
-    height: 2px;
-
-    background-color: #ffd68f;
-
-    position: absolute;
-    right: 170px;
-    top: 20px;
-}
-
-.personal__list-item:last-child {
-    position: relative;
-}
-
-.personal__counter {
-    background-color: #ffffff;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 18px;
-    height: 18px;
-
-    border-radius: 50%;
-    border-color: transparent;
-
-    font-size: 10px;
-    color: #000000;
-
-    position: absolute;
-    top: -9px;
-    right: -16px;
-}
-
-.social__list-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 50%;
-    background-color: #ffffff;
-
-    height: 36px;
-    width: 36px;
-
-}
-
-.social__list {
-    display: flex;
-    column-gap: 10px;
-}
-
-.header__content {
-    display: flex;
-    justify-content: center;
-}
-
-.content__btn {
-    display: flex;
-    align-items: center;
-
-    width: 281px;
-    height: 70px;
-
-    font-size: 24px;
-
-    padding-left: 36px;
-
-    position: relative;
-}
-
-.content__btn::after {
-    content: "";
-    background-image: url(./assets/images/Arrow.png);
-    background-repeat: no-repeat;
-    object-fit: cover;
-
-    width: 33px;
-    height: 20px;
-
-    position: absolute;
-    top: 29px;
-    right: 38px;
-}
-
-
-.content__btn:hover {
-    transition: 1s;
-    transform: scale(1.2);
-}
 
 
 
-.header__btn {
-    display: flex;
-    position: relative;
-}
 
-.menu__item:hover,
-.personal__list-item:hover,
-.social__list-item:hover {
-    transition: 1s;
-    transform: scale(1.5);
-}
+
+
 
 
 /* Блок smoothies  */
@@ -995,7 +813,7 @@ ul {
     }
 
     .header__navigation {
-    /* display: none; */
+    display: none;
     background-color: #0aa566;
     position: fixed;
     top: 0;
@@ -1031,3 +849,11 @@ ul {
     }
 
 }
+
+@import './normalize.scss';
+
+@import './header';
+@import './personal';
+@import './social';
+@import './content';
+@import './menu';
