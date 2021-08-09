@@ -1,0 +1,38 @@
+.content {
+    &__btn {
+        display: flex;
+        align-items: center;
+
+        width: 281px;
+        height: 70px;
+
+        font-size: 24px;
+
+        padding-left: 36px;
+
+        position: relative;
+    }
+
+    &__btn {
+        &::after {
+            content: "";
+            background-image: url(./../images/arrow-right.png);
+            background-repeat: no-repeat;
+            object-fit: cover;
+
+            width: 33px;
+            height: 20px;
+
+            position: absolute;
+            top: 29px;
+            right: 38px;
+        }
+    }
+
+    &__btn {
+        &:hover {
+            transition: 1s;
+            transform: scale(1.2);
+        }
+    }
+}
