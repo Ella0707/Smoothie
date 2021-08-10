@@ -36,159 +36,10 @@
 
 /* Секция Продукт  */
 
-.product__wrap {
-    display: flex;
-    overflow-x: scroll;
-}
 
-.product__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 480px;
-
-    padding: 130px 0px 75px 0px;
-}
-
-.product__box:first-child {
-    background-color: #602a1a;
-}
-
-.product__box:nth-child(2) {
-    background-color: #168a6f;
-}
-
-.product__box:nth-child(3) {
-    background-color: #f5b039;
-}
-
-.product__box:last-child {
-    background-color: #c6441c;
-}
-
-.product__title {
-    font-family: "Muli";
-    font-weight: bold;
-    font-size: 24px;
-    color: #ffffff;
-
-    margin-bottom: 10px;
-    margin-top: 25px;
-}
-
-.product__span {
-    font-family: Muli-Italic;
-    font-size: 21px;
-    color: #ffffff;
-
-    margin-bottom: 60px;
-}
-
-.product__btn {
-    display: flex;
-    align-items: center;
-
-    border: 2px solid white;
-    height: 61px;
-    width: 205px;
-
-    color: #ffffff;
-    font-size: 21px;
-
-    padding-left: 37px;
-    font-size: 21px;
-}
-
-.product__btn::after {
-    content: "";
-    background-image: url(./assets/images/Arrow_white.png);
-    background-repeat: no-repeat;
-
-    width: 40px;
-    height: 20px;
-
-    position: absolute;
-    transform: translate(100px, 0px);
-}
-
-.product__img {
-    object-fit: cover;
-
-
-}
 
 /* Блок Story  */
 
-.story__wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 120px 0px 160px 0px;
-}
-
-.story__img {
-    max-width: 585px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.story__pic {
-    position: relative;
-}
-
-.story__pic::before {
-    content: "";
-    background-image: url(./assets/images/stamp.png);
-    width: 306px;
-    height: 248px;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 4%;
-    left: -28%;
-}
-
-
-.story__title {
-    margin-bottom: 30px;
-    font-size: 50px;
-}
-
-.story__text {
-    width: 515px;
-    height: 118px;
-    margin-bottom: 70px;
-}
-
-.story__content {
-    margin-right: 200px;
-}
-
-
-.story__btn {
-    display: flex;
-    align-items: center;
-
-    height: 61px;
-    width: 302px;
-
-    padding-left: 31px;
-    font-size: 21px;
-}
-
-.story__btn::after {
-    content: "";
-    background-image: url(./assets/images/Arrow.png);
-    background-repeat: no-repeat;
-    position: absolute;
-
-    width: 40px;
-    height: 20px;
-
-    transform: translate(197px, 0px);
-}
 
 
 /* Блок testimonials */
@@ -642,5 +493,9 @@
 
 @import '././about/about';
 @import './components/btn';
- @import './item';
- @import './components/btn';
+@import './item';
+@import './components/btn';
+
+@import './product/product';
+
+@import './story/story';

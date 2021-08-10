@@ -1,0 +1,94 @@
+.product {
+    &__wrap {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 480px;
+
+        padding: 130px 0px 75px 0px;
+    }
+
+    &__box {
+        &:first-child {
+            background-color: #602a1a;
+        }
+    }
+
+    &__box {
+        &:nth-child(2) {
+            background-color: #168a6f;
+        }
+    }
+
+    &__box {
+        &:nth-child(3) {
+            background-color: #f5b039;
+        }
+    }
+
+    &__box {
+        &:last-child {
+            background-color: #c6441c;
+        }
+    }
+
+    &__title {
+        font-family: "Muli";
+        font-weight: bold;
+        font-size: 24px;
+        color: #ffffff;
+
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+
+    &__span {
+        font-family: Muli-Italic;
+        font-size: 21px;
+        color: #ffffff;
+
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+
+        border: 2px solid white;
+        height: 61px;
+        width: 205px;
+
+        color: #ffffff;
+        font-size: 21px;
+
+        padding-left: 37px;
+        font-size: 21px;
+    }
+
+    &__btn {
+        &::after {
+            content: "";
+            background-image: url(./../images/Arrow_white.png);
+            background-repeat: no-repeat;
+
+            width: 40px;
+            height: 20px;
+
+            position: absolute;
+            transform: translate(100px, 0px);
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+
+
+    }
+}
