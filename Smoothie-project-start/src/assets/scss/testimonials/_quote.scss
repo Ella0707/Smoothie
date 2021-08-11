@@ -1,0 +1,32 @@
+.quote {
+
+    &__text {
+        color: #ffffff;
+        max-width: 465px;
+        padding-bottom: 13px;
+    }
+
+    &__text {
+
+        &::after {
+            content: "Sarah A.";
+            position: absolute;
+            font-size: 200px;
+            font-family: "Muli-ExtraBold";
+            color: #521905;
+            width: 880px;
+            letter-spacing: -2px;
+
+            top: -40px;
+            left: -200px;
+            z-index: -1;
+            opacity: 60%;
+        }
+    }
+
+    &__autor {
+        font-family: Muli-Semi;
+        color: #f7ae3b;
+    }
+
+}

@@ -1,0 +1,28 @@
+.blog {
+    padding-top: 90px;
+    padding-bottom: 195px;
+
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+
+        padding-left: 360px;
+    }
+
+    &__left-block {
+        display: flex;
+        flex-direction: column;
+        margin-right: 65px;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+
+        width: 555px;
+
+        margin-top: 185px;
+    }
+
+}

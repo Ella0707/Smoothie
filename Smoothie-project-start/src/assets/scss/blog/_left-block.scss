@@ -1,0 +1,11 @@
+.left-block {
+    &__title {
+        margin-bottom: 50px;
+        font-size: 50px;
+    }
+
+    &__img {
+        width: 555px;
+        object-fit: cover;
+    }
+}

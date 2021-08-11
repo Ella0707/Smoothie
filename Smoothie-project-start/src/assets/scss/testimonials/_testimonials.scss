@@ -1,0 +1,54 @@
+.testimonials {
+    background-color: #662c1e;
+    padding-top: 105px;
+    padding-bottom: 80px;
+
+
+    &__title {
+        padding-bottom: 140px;
+        text-align: center;
+        font-size: 50px;
+        position: relative;
+    }
+
+    &__title {
+        &:before {
+            content: "";
+            background-image: url(./assets/images/Dots.png);
+            width: 420px;
+            height: 320px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -185px;
+            right: 45px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    &__quote {
+        text-align: center;
+        font-size: 18px;
+        position: relative;
+        z-index: 3;
+        padding-right: 45px;
+    }
+
+
+    &__img {
+        width: 220px;
+        object-fit: cover;
+        z-index: 3;
+        transform: translate(3px, -15px);
+    }
+
+    &__controls {
+        text-align: center;
+        letter-spacing: 90px;
+    }
+}
