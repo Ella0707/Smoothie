@@ -24,18 +24,17 @@
     }
     
     &__burger-btn {
+        background-image: url(./../images/burger-menu.png);
         background-color: transparent;
-        position: fixed;
-        right: 40px;
-        top: 20px;
+        background-size: cover;
         border: none;
-        width: 50px;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 30px;
+        right: 30px;
         display: none;
-        z-index: 2;
-    }
-    
-    &__burger-btn-icon {
-        width: 100%;
+        z-index: 9999;
     }
     
     &__logo {

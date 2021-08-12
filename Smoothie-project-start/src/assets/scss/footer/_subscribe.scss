@@ -4,18 +4,18 @@
         flex-direction: column;
         position: relative;
     }
-    
+
     &__form {
-    ::before {
-        content: "";
-        background-image: url(./../images/arrow3.png);
-        background-repeat: no-repeat;
-        height: 48px;
-        width: 48px;
-        position: absolute;
-        top: 70px;
-        left: 115px;
+        ::before {
+            content: "";
+            background-image: url(./../images/arrow3.png);
+            background-repeat: no-repeat;
+            height: 48px;
+            width: 48px;
+            position: absolute;
+            top: 70px;
+            left: 115px;
+        }
     }
-}
 
 }

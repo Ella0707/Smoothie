@@ -1,42 +1,4 @@
 @charset "UTF-8";
-/* Блок header  */
-/* Блок smoothies  */
-/* Блок About  */
-/* Секция Продукт  */
-/* Блок Story  */
-/* Блок testimonials */
-/* Блок blog */
-/* Блок instagram  */
-/* footer  */
-/* МЕДИАЗАПРОСЫ */
-@media (max-width: 768px) {
-  .header__burger-btn {
-    display: block; }
-  .header__navigation {
-    display: none;
-    background-color: #0aa566;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: center; }
-  .menu__list {
-    flex-direction: column;
-    height: 500px;
-    justify-content: space-between; }
-  .logo__img {
-    width: 250px; }
-  .menu__item {
-    margin: 0; }
-  .menu__link {
-    font-size: 2rem; }
-  .header__right-block {
-    margin: 100px 0 150px; } }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -424,16 +386,17 @@ ul {
     justify-content: space-between;
     align-items: center; }
   .header__burger-btn {
+    background-image: url(./../images/burger-menu.png);
     background-color: transparent;
-    position: fixed;
-    right: 40px;
-    top: 20px;
+    background-size: cover;
     border: none;
-    width: 50px;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
     display: none;
-    z-index: 2; }
-  .header__burger-btn-icon {
-    width: 100%; }
+    z-index: 9999; }
   .header__logo {
     position: absolute;
     left: 50%;
@@ -569,7 +532,7 @@ ul {
   .smoothies__wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 1080px;
+    max-width: 1080px;
     margin: auto; }
   .smoothies__item {
     display: flex;
@@ -635,7 +598,8 @@ ul {
     object-fit: cover;
     transform: translate(150px, 65px);
     margin-right: 295px;
-    max-height: 800px; }
+    max-height: 800px;
+    max-width: 691px; }
   .about__title {
     color: #ffffff;
     font-size: 55px;
@@ -1084,5 +1048,36 @@ ul {
   top: 47px;
   left: -65px;
   color: #ffffff; }
+
+@media screen and (max-width: 768px) {
+  .header__navigation {
+    display: none; }
+  .header__burger-btn {
+    display: block; }
+  .header__right-block {
+    margin-bottom: 100px; }
+  .menu__list {
+    flex-direction: column; }
+  .menu__item {
+    margin-right: 0px;
+    margin-bottom: 30px; }
+  .smoothies__text {
+    margin-left: 30px;
+    margin-right: 30px; }
+  .smothies__wrapper {
+    margin-left: 150px;
+    margin-right: 150px; }
+  .about__wrapper {
+    display: flex;
+    flex-direction: column; }
+  .about__img {
+    margin: 30px 30px 100px 30px;
+    transform: none; }
+  .about__content {
+    margin: auto; }
+  .about__title {
+    margin: 0px; }
+  .about__btn {
+    margin: 0px auto 50px auto; } }
 
 /*# sourceMappingURL=style.min.css.map */

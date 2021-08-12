@@ -1,130 +1,5 @@
 
-/* Блок header  */
 
-
-
-
-
-
-
-
-
-/* Блок smoothies  */
-
-
-
-
-
-
-
-
-
-
-/* Блок About  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Секция Продукт  */
-
-
-
-/* Блок Story  */
-
-
-
-/* Блок testimonials */
-
-
-
-
-
-
-
-
-
-
-/* Блок blog */
-
-
-
-/* Блок instagram  */
-
-
-
-
-/* footer  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* МЕДИАЗАПРОСЫ */
-
-@media (max-width: 768px) {
-    .header__burger-btn {
-        display: block;
-    }
-
-    .header__navigation {
-    display: none;
-    background-color: #0aa566;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: center;
-    }
-
-    .menu__list {
-        flex-direction: column;
-        height: 500px;
-        justify-content: space-between;
-    }
-
-    .logo__img {
-        width: 250px;
-    }
-
-    .menu__item {
-        margin: 0;
-    }
-
-    .menu__link {
-        font-size: 2rem;
-    }
-
-    .header__right-block {
-        margin: 100px 0 150px;
-    }
-
-}
 
 @import './normalize.scss';
 @import './basic';
@@ -164,3 +39,8 @@
 @import './footer/_social';
 @import './footer/_subscribe';
 @import './footer/_up';
+
+
+
+
+@import './media';
