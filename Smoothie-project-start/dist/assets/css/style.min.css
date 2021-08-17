@@ -1078,6 +1078,35 @@ ul {
   .about__title {
     margin: 0px; }
   .about__btn {
-    margin: 0px auto 50px auto; } }
+    margin: 0px auto 50px auto; }
+  .product__box {
+    min-width: 400px; }
+  .story__wrap {
+    padding: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 30px 50px 30px; }
+  .story__content {
+    margin: 0px 0px 50px 0px;
+    padding-right: 100px; }
+  .story__img {
+    max-width: 100%;
+    padding-left: 140px; }
+  .story__pic::before {
+    top: 4%;
+    left: -4%; }
+  .testimonials__block {
+    flex-direction: column-reverse; }
+  .testimonials__title {
+    padding-bottom: 100px; }
+  .testimonials__quote {
+    padding: 0px; }
+  .testimonials__img {
+    margin-bottom: 60px; }
+  .quote__text::after {
+    font-size: 150px;
+    width: 630px;
+    top: -30px;
+    left: -80px; } }
 
 /*# sourceMappingURL=style.min.css.map */
