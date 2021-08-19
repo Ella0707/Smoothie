@@ -1,5 +1,5 @@
 .instagram {
-    &_link {
+    &__link {
         display: block;
         text-align: center;
     
@@ -13,7 +13,7 @@
         position: relative;
     }
     
-    &_link {
+    &__link {
     &::before {
         content: "";
         background-image: url(./../images/Icon.png);
@@ -59,4 +59,7 @@
         position: relative;
         z-index: -1;
     }
+
+
+
 }

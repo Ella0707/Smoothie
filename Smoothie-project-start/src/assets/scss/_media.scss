@@ -60,7 +60,7 @@
     margin: auto;
 }
     .about__title {
-        margin: 0px;
+        margin: 0px 0px 40px 0px;
     }
 
     .about__btn {
@@ -118,6 +118,55 @@
         top: -30px;
         left: -80px;
       
+}
+
+.blog__wrapper {
+    flex-direction: column;
+    padding-left: 0px;
+}
+
+.blog__left-block {
+    margin-right: 0px;
+}
+
+.blog__article {
+    margin-top: 40px;
+}
+
+.article__heading::before {
+    content: none;
+}
+
+.instagram__link::before {
+    right: 64%;
+}
+
+.instagram__content {
+    overflow-x: scroll;
+}
+.footer__top {
+    // padding: 0px;
+    flex-direction: column;
+}
+
+.footer__logo {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.footer__wrap {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.footer__information {
+    margin-right: 150px;
+}
+
+.up__btn {
+    right: 40px;
 }
 
 }
