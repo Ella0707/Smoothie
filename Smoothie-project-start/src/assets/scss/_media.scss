@@ -170,3 +170,68 @@
 }
 
 }
+
+
+
+
+@media screen and (max-width: 360px) {
+
+    .header__logo {
+        margin-top: 50px;
+    }
+
+.content__btn {
+margin-top: 50px;
+}
+
+.content__title {
+    font-size: 48px;
+}
+
+.smoothies__wrapper {
+    
+    max-width: 250px;
+
+}
+
+.smoothies__item {
+    flex-basis: 50%;
+}
+
+.smoothies__item:nth-child(2),
+.smoothies__item:nth-child(6) {
+border-right: none;
+}
+
+.smoothies__item:nth-child(5),
+.smoothies__item:nth-child(6) {
+border-bottom: 2px solid #f6ecdd;
+}
+
+
+.about__title {
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+}
+
+.title--yellow::after {
+    width: 300px;
+    top: 40px;
+    object-fit: cover;
+}
+
+.about__item {
+    font-size: 19px;
+}
+
+.about__btn {
+    width: 250px;
+}
+
+.about__btn::after {
+    right: 10px;
+}
+
+}
