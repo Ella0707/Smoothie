@@ -145,7 +145,6 @@
     overflow-x: scroll;
 }
 .footer__top {
-    // padding: 0px;
     flex-direction: column;
 }
 
@@ -155,14 +154,7 @@
 }
 
 .footer__wrap {
-    display: flex;
-    justify-content: center;
-
     margin-bottom: 50px;
-}
-
-.footer__information {
-    margin-right: 150px;
 }
 
 .up__btn {
@@ -232,6 +224,124 @@ border-bottom: 2px solid #f6ecdd;
 
 .about__btn::after {
     right: 10px;
+}
+
+.product__box {
+    padding: 70px 0px 40px 0px;
+    min-width: 230px;
+
+}
+
+.product__img {
+    width: 95px;
+}
+
+.product__title {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product__span {
+    font-size: 16px;
+}
+
+.product__btn {
+    height: 55px;
+    width: 180px;
+}
+
+.product__btn::after {
+    transform: translate(70px, 5px);
+}
+
+
+.story__text {
+    width: 300px;
+    margin-bottom: 120px;
+}
+
+.story__pic::before {
+    content: none;
+}
+
+.story__img {
+    padding: 0px;
+}
+
+.quote__text {
+    max-width: 320px;
+}
+
+.quote__text::after {
+    content: none;
+}
+
+.blog {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+
+.left-block__img {
+    max-width: 310px;
+}
+
+.blog__article {
+    max-width: 300px;
+}
+
+.article__text {
+    max-width: 250px;
+    padding-left: 0px;
+}
+
+.article__link::after {
+    right: 8%;
+}
+
+.instagram__link::before {
+    top: 10%;
+    left: 15%;
+}
+
+.instagram__photo {
+    max-width: 250px;
+}
+
+
+.footer__top {
+    padding: 20px;
+}
+
+.footer__wrap {
+    flex-direction: column;
+}
+
+.footer__information {
+    margin-bottom: 25px;
+}
+
+.form__input--text {
+    width: 300px;
+}
+
+.form__input--submit {
+    padding-right: 25px;
+}
+
+.footer__social {
+    transform: translate(10%, -80%);
+    margin-right: 0px;
+}
+
+.subscribe__form::before {
+    top: 60px;
+    left: 10px;
+}
+
+.up__btn {
+    right: 30%;
 }
 
 }

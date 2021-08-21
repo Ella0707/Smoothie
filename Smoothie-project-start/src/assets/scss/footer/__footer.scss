@@ -1,19 +1,19 @@
 .footer {
-    .footer__top {
+    &__top {
         background-color: #f5ab3e;
         display: flex;
         justify-content: space-between;
         padding: 75px 100px 70px 100px;
     }
     
-    .footer__logo {
+    &__logo {
         object-fit: contain;
         margin-right: 140px;
     
         transform: translate(0px, -10%);
     }
 
-    .footer__social {
+    &__social {
         display: flex;
         justify-content: flex-end;
     
@@ -21,7 +21,7 @@
         transform: translate(-3%, -75%);
     }
     
-    .footer__down {
+    &__down {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,7 +31,7 @@
         height: 60px;
     }
     
-    .footer__small {
+    &__small {
         font-size: 13px;
         color: #af8a82;
     }
@@ -40,6 +40,14 @@
         font-size: 16px;
     }
     
+
+    &__wrap {
+        display: flex;
+    }
+
+    &__information {
+        padding-right: 160px;
+    }
     
 
 

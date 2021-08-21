@@ -6,7 +6,7 @@
     }
 
     &__form {
-        ::before {
+        &::before {
             content: "";
             background-image: url(./../images/arrow3.png);
             background-repeat: no-repeat;
