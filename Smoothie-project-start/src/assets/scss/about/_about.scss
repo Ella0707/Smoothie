@@ -3,6 +3,7 @@
 
     &__wrapper {
         display: flex;
+        padding-left: 155px;
     }
 
     &__content {
@@ -13,11 +14,13 @@
 
     &__img {
         object-fit: cover;
-        transform: translate(150px, 65px);
-        margin-right: 295px;
+        margin-right: 140px;
         max-height: 800px;
         max-width: 691px;
+        position: relative;
+        top: 70px;
     }
+    
 
     &__title {
         color: #ffffff;

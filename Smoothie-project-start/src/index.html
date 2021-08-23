@@ -98,13 +98,13 @@
         <div class="header__content">
             <a class="content__btn btn btn--green" href="">Shop Now</a>
        </div>
-        <h1 class="content__title">The Best Smoothies</h1>
+        <h1 class="animated bounceIn content__title ">The Best Smoothies</h1>
         
     </header>
 
     <section class="smoothies">
 
-        <h2 class="smoothies__title title title--orange">What are these smoothies?
+        <h2 class="smoothies__title title title--orange ">What are these smoothies?
         </h2>
 
         <p class="smoothies__text text">A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes
@@ -121,35 +121,35 @@
 
         <ul class="smoothies__wrapper">
             <li class="smoothies__item">
-                <img class="smoothies__img" src="./assets/images/Plant.png" alt="">
+                <img class="wow animated flipInX smoothies__img" src="./assets/images/Plant.png" alt="">
                 <span class="smoothies__span title">Plant Based</span>
             </li>
             <li class="smoothies__item">
-                <img class="smoothies__img" src="./assets/images/Vegan.png" alt="">
+                <img class="wow animated flipInX smoothies__img" src="./assets/images/Vegan.png" alt="">
                 <span class="smoothies__span title">Vegan</span>
             </li>
             <li class="smoothies__item">
-                <img class="smoothies__img" src="./assets/images/Paleo.png" alt="">
+                <img class="wow animated flipInX smoothies__img" src="./assets/images/Paleo.png" alt="">
                 <span class="smoothies__span title">Paleo</span>
             </li>
             <li class="smoothies__item">
-                <img class="smoothies__img" src="./assets/images/Gluten-free.png" alt="">
+                <img class="wow animated flipInX smoothies__img" src="./assets/images/Gluten-free.png" alt="">
                 <span class="smoothies__span title">Gluten-Free</span>
             </li>
             <li class="smoothies__item">
-                <img class="smoothies__img" src="./assets/images/Corn.png" alt="">
+                <img class="wow animated flipInX smoothies__img" src="./assets/images/Corn.png" alt="">
                 <span class="smoothies__span title">Corn-Free</span>
             </li>
             <li class="smoothies__item">
-                <img class="smoothies__img" src="./assets/images/Soy.png" alt="">
+                <img class="wow animated flipInX smoothies__img" src="./assets/images/Soy.png" alt="">
                 <span class="smoothies__span title">Soy-Free</span>
             </li>
             <li class="smoothies__item">
-                <img class="smoothies__img" src="./assets/images/Ayurvedic.png" alt="">
+                <img class="wow animated flipInX smoothies__img" src="./assets/images/Ayurvedic.png" alt="">
                 <span class="smoothies__span title">Ayurvedic</span>
             </li>
             <li class="smoothies__item">
-                <img class="smoothies__img" src="./assets/images/Love.png" alt="">
+                <img class="smoothies__img wow animated flipInX" src="./assets/images/Love.png" alt="">
                 <span class="smoothies__span title">Made With Love</span>
             </li>
         </ul>
@@ -160,7 +160,7 @@
 
         <div class="about__wrapper">
 
-            <img class="about__img" src="./assets/images/summer.png" alt="">
+            <img class="about__img" data-tilt src="./assets/images/summer.png" alt="">
 
             <div class="about__content">
                 <h2 class="about__title title">What makes Smoothie an <span class="title--yellow">awesome
@@ -190,28 +190,28 @@
         <div class="product__wrap">
 
             <div class="product__box">
-                <img class="product__img" src="./assets/images/chocolade.png" alt="">
+                <img class="product__img wow animate__bounceIn" src="./assets/images/chocolade.png" alt="">
                 <h5 class="product__title">Dark Chocolate Smoothie</h5>
                 <span class="product__span">100 ml</span>
                 <a class="product__btn btn btn--transparet" href="">Buy</a>
             </div>
 
             <div class="product__box">
-                <img class="product__img" src="./assets/images/Vegan2.png" alt="">
+                <img class="product__img wow animate__bounceIn" src="./assets/images/Vegan2.png" alt="">
                 <h5 class="product__title">Vegan Lettuce Smoothie</h5>
                 <span class="product__span">100 ml</span>
                 <a class="product__btn btn btn--transparet" href="">Buy</a>
             </div>
 
             <div class="product__box">
-                <img class="product__img" src="./assets/images/Lemon.png" alt="">
+                <img class="product__img wow animate__bounceIn" src="./assets/images/Lemon.png" alt="">
                 <h5 class="product__title"> Lemon Ginger Smoothie</h5>
                 <span class="product__span">100 ml</span>
                 <a class="product__btn btn btn--transparet" href="">Buy</a>
             </div>
 
             <div class="product__box">
-                <img class="product__img" src="./assets/images/Turcmeric.png" alt="">
+                <img class="product__img wow animate__bounceIn" src="./assets/images/Turcmeric.png" alt="">
                 <h5 class="product__title">Turmeric Garlic Smoothie</h5>
                 <span class="product__span">100 ml</span>
                 <a class="product__btn btn btn--transparet" href="">Buy</a>
@@ -402,6 +402,13 @@
         </div>
     </footer>
 
+    <script src="./assets/js/script.js"></script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    
+    <script>
+        new WOW().init();
+        </script>
 </body>
 
 </html>
