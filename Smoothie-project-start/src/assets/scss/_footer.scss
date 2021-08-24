@@ -36,7 +36,7 @@
         color: #af8a82;
     }
     
-    .footer__up {
+    &__up {
         font-size: 16px;
     }
     
@@ -47,6 +47,18 @@
 
     &__information {
         padding-right: 160px;
+    }
+
+    &__social-list {
+        display: flex;
+    }
+
+    &__social-item {
+        margin-right: 25px;
+    }
+
+    &__social-img {
+        object-fit: cover;
     }
     
 

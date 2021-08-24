@@ -1,5 +1,5 @@
 .form {
-    &__input--text {
+    &__input-text {
         outline: none;
         background-image: url(./../images/subscribe.png);
         background-position-x: 20px;
@@ -14,13 +14,13 @@
         font-weight: 900;
     }
 
-    &__input--text {
+    &__input-text {
         &::placeholder {
             color: #6d450c;
         }
     }
 
-    &__input--submit {
+    &__input-submit {
         font-family: "Muli-ExtraBold";
         font-size: 16px;
         color: #6d450c;

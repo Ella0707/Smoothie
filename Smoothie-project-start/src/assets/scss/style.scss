@@ -4,41 +4,34 @@
 @import './normalize.scss';
 @import './basic';
 
-@import '././header/header';
-@import '././header/personal';
-@import '././header/social';
-@import '././header/content';
-@import '././header/menu';
+@import './header';
+@import './smoothies';
+@import './about';
+@import './product';
+@import './story';
+@import './testimonials';
+@import './blog';
+@import './instagram';
+@import './footer';
 
-@import '././smoothies/smoothies';
-@import '././smoothies/text';
-@import './title';
 
-@import '././about/about';
-@import './components/btn';
-@import './item';
-@import './components/btn';
 
-@import './product/product';
+@import '././components/menu';
+@import '././components/text';
+@import '././components/title';
+@import '././components/btn';
+@import '././components/item';
+@import '././components/quote';
+@import '././components/article';
+@import '././components/left-block';
+@import '././components/form';
+@import '././components/information';
+@import '././components/payment';
+@import '././components/subscribe';
+@import '././components/up';
+@import '././components/personal';
+@import '././components/social';
 
-@import './story/story';
-
-@import './testimonials/testimonials';
-@import './testimonials/quote';
-
-@import './blog/blog';
-@import './blog/article';
-@import './blog/left-block';
-
-@import './instagram/instagram';
-
-@import './footer/_footer';
-@import './footer/_form';
-@import './footer/_information';
-@import './footer/_payment';
-@import './footer/_social';
-@import './footer/_subscribe';
-@import './footer/_up';
 
 @import './libs/animate';
 

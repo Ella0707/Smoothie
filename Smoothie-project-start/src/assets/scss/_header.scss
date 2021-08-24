@@ -54,10 +54,10 @@
         margin: 0px 135px 0px 0px;
     }
     
-    &__title {
-        line-height: 40px;
-        font-size: 50px;
-    }
+    // &__title {
+    //     line-height: 40px;
+    //     font-size: 50px;
+    // }
     
     
     &__content {
@@ -68,6 +68,52 @@
     &__btn {
         display: flex;
         position: relative;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+
+        width: 281px;
+        height: 70px;
+
+        font-size: 24px;
+
+        padding-left: 36px;
+
+        position: relative;
+    }
+
+    &__btn {
+        &::after {
+            content: "";
+            background-image: url(./../images/arrow-right.png);
+            background-repeat: no-repeat;
+            object-fit: cover;
+
+            width: 33px;
+            height: 20px;
+
+            position: absolute;
+            top: 29px;
+            right: 38px;
+        }
+    }
+
+    &__btn {
+        &:hover {
+            transition: 1s;
+            transform: scale(1.2);
+        }
+    }
+
+    &__title {
+        font-family: Muli-ExtraBold;
+        font-weight: 800;
+        font-size: 100px;
+        text-align: center;
+        color: #ffffff;
+
+        margin-top: 100px;
     }
 
 
