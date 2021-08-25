@@ -385,18 +385,42 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  .header__burger-btn {
-    background-image: url(./../images/burger-menu.png);
+  .header__burger {
     background-color: transparent;
-    background-size: cover;
     border: none;
     width: 30px;
     height: 30px;
     position: fixed;
     top: 30px;
     right: 30px;
-    display: none;
-    z-index: 9999; }
+    z-index: 99999999; }
+  .header__burger span {
+    width: 30px;
+    height: 2px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s; }
+  .header__burger span::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: green;
+    transform: translateY(-8px); }
+  .header__burger span::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: green;
+    position: absolute;
+    transform: translateY(8px); }
+  .header__burger .open span::before {
+    transform: rotate(45deg); }
+  .header__burger .open span::after {
+    transform: rotate(45deg); }
+  .header__burger .open span {
+    opacity: 100%; }
   .header__logo {
     position: absolute;
     left: 50%;
@@ -1044,6 +1068,13 @@ ul {
 .social__list-item:hover {
   transition: 1s;
   transform: scale(1.5); }
+
+.open span {
+  height: 0px; }
+  .open span::after {
+    transform: rotate(45deg); }
+  .open span::before {
+    transform: rotate(-45deg); }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -3064,8 +3095,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: rollOut; }
 
 @media screen and (max-width: 768px) {
-  .header__navigation {
-    display: none; }
+  .menuGb {
+    display: none;
+    position: fixed;
+    background-color: #0aa566;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 100px;
+    justify-content: flex-end;
+    transform: translateX(-100%); }
+  .open {
+    transform: translateX(0); }
   .header__burger-btn {
     display: block; }
   .header__right-block {

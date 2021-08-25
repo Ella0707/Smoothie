@@ -1,0 +1,14 @@
+.open span {
+
+   height: 0px;
+   
+    &::after {
+        transform: rotate(45deg);
+        
+    }
+
+    &::before {
+        transform: rotate(-45deg);
+       
+    }
+}

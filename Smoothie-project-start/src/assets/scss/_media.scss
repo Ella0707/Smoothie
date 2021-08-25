@@ -3,19 +3,25 @@
 
 @media screen and (max-width: 768px) {
     
-   .header__navigation {
+   .menuGb {
     display: none;
-    // position: fixed;
-    // background-color: #0aa566;
-    // z-index: 2;
-    // top: 0px;
-    // left: 0px;
-    // right: 0px;
-    // bottom: 0px;
-    // display: flex;
-    // flex-direction: column-reverse;
-    // padding-top: 100px;
-    // justify-content: flex-end;
+    position: fixed;
+    background-color: #0aa566;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 100px;
+    justify-content: flex-end;
+    transform: translateX(-100%);
+
+   }
+
+   .open {
+       transform: translateX(0);
    }
 
 .header__burger-btn {

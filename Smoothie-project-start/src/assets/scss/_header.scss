@@ -23,19 +23,69 @@
         align-items: center;
     }
     
-    &__burger-btn {
-        background-image: url(./../images/burger-menu.png);
+    &__burger {
+        // background-image: url(./../images/burger-menu.png);
         background-color: transparent;
-        background-size: cover;
+        // background-size: cover;
         border: none;
         width: 30px;
         height: 30px;
         position: fixed;
         top: 30px;
         right: 30px;
-        display: none;
-        z-index: 9999;
+        // display: none;
+        z-index: 99999999;  
     }
+
+    &__burger span {
+        width: 30px;
+        height: 2px;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        transition: 0.3s;
+    }
+
+    &__burger span {
+    &::after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: green;
+        transform: translateY(-8px);
+    }
+}
+
+&__burger span {
+    &::before {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: green;
+        position: absolute;
+        transform: translateY(8px);
+    }
+}
+
+&__burger .open span {
+    &::before {
+        transform: rotate(45deg);
+    }
+}
+
+&__burger .open span {
+    &::after {
+        transform: rotate(45deg);
+    }
+}
+
+&__burger .open span {
+     
+        opacity: 100%;
+    
+}
     
     &__logo {
         position: absolute;
