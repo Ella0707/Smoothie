@@ -393,6 +393,7 @@ ul {
     position: fixed;
     top: 30px;
     right: 30px;
+    display: none;
     z-index: 99999999; }
   .header__burger span {
     width: 30px;
@@ -3111,7 +3112,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateX(-100%); }
   .open {
     transform: translateX(0); }
-  .header__burger-btn {
+  .header__burger {
     display: block; }
   .header__right-block {
     margin-bottom: 100px; }
