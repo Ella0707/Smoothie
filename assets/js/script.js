@@ -4,6 +4,10 @@ function test(a, b) {
 
 
 
+function onClickMenu() {
+    document.getElementById('burger').classList.toggle('open');
+    document.getElementById('menuGb').classList.toggle('open');
+}
 var VanillaTilt = (function () {
     'use strict';
     
