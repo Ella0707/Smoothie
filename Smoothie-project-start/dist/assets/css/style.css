@@ -451,7 +451,8 @@ ul {
     position: fixed;
     top: 30px;
     right: 30px;
-    z-index: 2;
+    display: none;
+    z-index: 99999999;
 }
 
 .header__burger span {
@@ -463,7 +464,7 @@ ul {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
-    transition: 2s;
+    transition: 0.3s;
 }
 
 .header__burger span::after {
@@ -1407,19 +1408,17 @@ ul {
 }
 
 .open span {
-    opacity: 0;
+    height: 0px;
 }
 
 .open span::after {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    opacity: 100%;
 }
 
 .open span::before {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    opacity: 100%;
 }
 
 /*!
@@ -3997,7 +3996,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         transform: translateX(0);
     }
 
-    .header__burger-btn {
+    .header__burger {
         display: block;
     }
 

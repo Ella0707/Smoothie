@@ -770,7 +770,8 @@ ul {
 
 .instagram__photo {
   position: relative;
-  z-index: -1; }
+  z-index: -1;
+  max-width: 100%; }
 
 .footer__top {
   background-color: #f5ab3e;
@@ -3095,6 +3096,75 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: rollOut;
   animation-name: rollOut; }
 
+@media screen and (max-width: 1600px) {
+  .footer__information {
+    padding-right: 60px; }
+  .footer__logo {
+    margin-right: 40px; }
+  .instagram__link::before {
+    right: 57%; }
+  .blog__wrapper {
+    padding-left: 170px; } }
+
+@media screen and (max-width: 1520px) {
+  .header {
+    padding-top: 60px; }
+  .header__top {
+    margin: 0 50px 100px 50px; }
+  .menu__list {
+    padding-left: 0px; }
+  .about__wrapper {
+    padding-left: 50px; } }
+
+@media screen and (max-width: 1400px) {
+  .header {
+    padding-top: 45px; }
+  .menu__list {
+    column-gap: 20px; }
+  .personal__list {
+    column-gap: 35px; }
+  .about__img {
+    margin-right: 70px; }
+  .story__content {
+    margin-right: 100px; }
+  .blog__wrapper {
+    padding-left: 70px; }
+  .footer__top {
+    padding: 50px; } }
+
+@media screen and (max-width: 1260px) {
+  .header__top {
+    margin: 0 15px 80px 15px; }
+  .header__title {
+    font-size: 80px; }
+  .title--yellow::after {
+    width: 390px; }
+  .about__img {
+    margin-right: 30px;
+    top: 30px;
+    max-width: 590px; }
+  .about__title {
+    font-size: 40px;
+    margin: 90px 0px 50px 0px; }
+  .blog__left-block {
+    margin-right: 10px; }
+  .blog__article {
+    width: 390px; }
+  .article__text {
+    width: 493px;
+    padding-left: 20px; }
+  .article__heading::before {
+    width: 500px; }
+  .story__img {
+    max-width: 520px; }
+  .instagram__link::before {
+    right: 58%; }
+  .form__input-text {
+    width: 400px; }
+  .subscribe__form::before {
+    top: 65px;
+    left: 65px; } }
+
 @media screen and (max-width: 768px) {
   .menuGb {
     display: none;
@@ -3273,9 +3343,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     flex-direction: column; }
   .footer__information {
     margin-bottom: 25px; }
-  .form__input--text {
+  .form__input-text {
     width: 300px; }
-  .form__input--submit {
+  .form__input-submit {
     padding-right: 25px; }
   .footer__social {
     transform: translate(10%, -80%);
