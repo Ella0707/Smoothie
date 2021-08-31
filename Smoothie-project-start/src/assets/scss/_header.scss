@@ -10,7 +10,7 @@
     background-position: center;
     background-size: cover;
     object-fit: cover;
-
+    
     &__top {
         margin: 0 100px 120px 90px;
     
@@ -24,9 +24,7 @@
     }
     
     &__burger {
-        // background-image: url(./../images/burger-menu.png);
         background-color: transparent;
-        // background-size: cover;
         border: none;
         width: 30px;
         height: 30px;
