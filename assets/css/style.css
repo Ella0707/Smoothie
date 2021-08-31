@@ -975,8 +975,6 @@ ul {
 .instagram__content {
     display: -ms-flexbox;
     display: flex;
-    -o-object-fit: cover;
-    object-fit: cover;
 }
 
 .instagram__wrap {
@@ -1001,6 +999,7 @@ ul {
 .instagram__photo {
     position: relative;
     z-index: -1;
+    max-width: 100%;
 }
 
 .footer__top {
@@ -3970,7 +3969,158 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-name: rollOut;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1600px) {
+    .footer__information {
+        padding-right: 60px;
+    }
+
+    .footer__logo {
+        margin-right: 40px;
+    }
+
+    .instagram__link::before {
+        right: 57%;
+    }
+
+    .blog__wrapper {
+        padding-left: 170px;
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    .header {
+        padding-top: 60px;
+    }
+
+    .header__top {
+        margin: 0 50px 100px 50px;
+    }
+
+    .menu__list {
+        padding-left: 0px;
+    }
+
+    .about__wrapper {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .header {
+        padding-top: 45px;
+    }
+
+    .menu__list {
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .personal__list {
+        -webkit-column-gap: 35px;
+        -moz-column-gap: 35px;
+        column-gap: 35px;
+    }
+
+    .about__img {
+        margin-right: 70px;
+    }
+
+    .story__content {
+        margin-right: 100px;
+    }
+
+    .blog__wrapper {
+        padding-left: 70px;
+    }
+
+    .footer__top {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .header__top {
+        margin: 0 15px 80px 15px;
+    }
+
+    .header__title {
+        font-size: 80px;
+    }
+
+    .title--yellow::after {
+        width: 390px;
+    }
+
+    .about__img {
+        margin-right: 30px;
+        top: 30px;
+        max-width: 590px;
+    }
+
+    .about__title {
+        font-size: 40px;
+        margin: 90px 0px 50px 0px;
+    }
+
+    .blog__left-block {
+        margin-right: 10px;
+    }
+
+    .blog__article {
+        width: 390px;
+    }
+
+    .article__text {
+        width: 493px;
+        padding-left: 20px;
+    }
+
+    .article__heading::before {
+        width: 500px;
+    }
+
+    .story__img {
+        max-width: 520px;
+    }
+
+    .instagram__link::before {
+        right: 58%;
+    }
+
+    .form__input-text {
+        width: 400px;
+    }
+
+    .subscribe__form::before {
+        top: 65px;
+        left: 65px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu__list {
+        -webkit-column-gap: 14px;
+        -moz-column-gap: 14px;
+        column-gap: 14px;
+    }
+
+    .header__personal {
+        margin: 0px 100px 0px 0px;
+    }
+
+    .personal__list::after {
+        content: none;
+    }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 1260px) {
+    .header__top {
+        margin: 0 15px 180px 10px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
     .menuGb {
         display: none;
         position: fixed;
@@ -3989,6 +4139,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         justify-content: flex-end;
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
+        transition: .3s;
     }
 
     .open {
@@ -3998,6 +4149,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .header__burger {
         display: block;
+    }
+
+    .header {
+        padding-top: 80px;
     }
 
     .header__right-block {
@@ -4029,6 +4184,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         display: flex;
         -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
         padding-left: 25px;
     }
 
@@ -4124,6 +4281,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         right: 64%;
     }
 
+    .instagram__photo {
+        max-width: 350px;
+    }
+
     .instagram__content {
         overflow-x: scroll;
     }
@@ -4140,6 +4301,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .footer__wrap {
         margin-bottom: 50px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .footer__subscribe {
+        margin: 0 auto;
     }
 
     .up__btn {
@@ -4158,6 +4325,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .content__title {
         font-size: 48px;
+    }
+
+    .header__title {
+        font-size: 48px;
+        margin-top: 50px;
     }
 
     .smoothies__wrapper {
@@ -4192,132 +4364,144 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         object-fit: cover;
     }
 
-    .about__item {
+    .about__content {
+        max-width: 303px;
+    }
+
+    .about__img {
+        max-width: 250px;
+    }
+
+    .about__img .about__list {
+        padding-left: 15px;
+    }
+
+    .about__img .about__item {
         font-size: 19px;
     }
 
-    .about__btn {
+    .about__img .about__btn {
         width: 250px;
     }
 
-    .about__btn::after {
+    .about__img .about__btn::after {
         right: 10px;
     }
 
-    .product__box {
+    .about__img .product__box {
         padding: 70px 0px 40px 0px;
         min-width: 230px;
     }
 
-    .product__img {
+    .about__img .product__img {
         width: 95px;
     }
 
-    .product__title {
+    .about__img .product__title {
         font-size: 18px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .product__span {
+    .about__img .product__span {
         font-size: 16px;
     }
 
-    .product__btn {
+    .about__img .product__btn {
         height: 55px;
         width: 180px;
     }
 
-    .product__btn::after {
+    .about__img .product__btn::after {
         -webkit-transform: translate(70px, 5px);
         transform: translate(70px, 5px);
     }
 
-    .story__text {
+    .about__img .story__text {
         width: 300px;
         margin-bottom: 120px;
     }
 
-    .story__pic::before {
+    .about__img .story__pic::before {
         content: none;
     }
 
-    .story__img {
+    .about__img .story__img {
         padding: 0px;
     }
 
-    .quote__text {
+    .about__img .quote__text {
         max-width: 320px;
     }
 
-    .quote__text::after {
+    .about__img .quote__text::after {
         content: none;
     }
 
-    .blog {
+    .about__img .blog {
         padding-top: 60px;
         padding-bottom: 100px;
     }
 
-    .left-block__img {
+    .about__img .left-block__img {
         max-width: 310px;
     }
 
-    .blog__article {
+    .about__img .blog__article {
         max-width: 300px;
     }
 
-    .article__text {
+    .about__img .article__text {
         max-width: 250px;
         padding-left: 0px;
     }
 
-    .article__link::after {
+    .about__img .article__link::after {
         right: 8%;
     }
 
-    .instagram__link::before {
+    .about__img .instagram__link::before {
         top: 10%;
         left: 15%;
     }
 
-    .instagram__photo {
+    .about__img .instagram__photo {
         max-width: 250px;
     }
 
-    .footer__top {
+    .about__img .footer__top {
         padding: 20px;
     }
 
-    .footer__wrap {
+    .about__img .footer__wrap {
         -ms-flex-direction: column;
         flex-direction: column;
     }
 
-    .footer__information {
+    .about__img .footer__information {
         margin-bottom: 25px;
     }
 
-    .form__input--text {
+    .about__img .form__input-text {
         width: 300px;
     }
 
-    .form__input--submit {
+    .about__img .form__input-submit {
         padding-right: 25px;
     }
 
-    .footer__social {
+    .about__img .footer__social {
         -webkit-transform: translate(10%, -80%);
         transform: translate(10%, -80%);
         margin-right: 0px;
     }
 
-    .subscribe__form::before {
+    .about__img .subscribe__form::before {
         top: 60px;
         left: 10px;
     }
 
-    .up__btn {
+    .about__img .up__btn {
         right: 30%;
     }
 }
